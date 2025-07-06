@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+
+langchain
+langchain-community
+langchain-cohere
+langchain-groq
+langchain-core
+pinecone-client
+sentence-transformers

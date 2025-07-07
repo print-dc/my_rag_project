@@ -1,29 +1,23 @@
-# 🤖 Gen_Alpha - RAG Streamlit App
+# 🚀 Gen_Alpha RAG
 
-This is a **Retrieval-Augmented Generation (RAG)** app built with:
-- **Streamlit** for the UI
-- **LangChain** for orchestration
-- **Pinecone** as the vector store
-- **Cohere** for embeddings
-- **Groq** for LLM completion
+A two-part modular Retrieval-Augmented Generation (RAG) system built with Streamlit, Pinecone, Langchain, Groq and Cohere embeddings.
 
-It lets you upload **TXT or PDF files**, index them into Pinecone, and ask questions.  
-You'll get **ChatGPT-style crisp answers**, with matching sources displayed below.
+✅ Upload & index text/PDF files into Pinecone under a namespace  
+✅ Chat with your indexed data in real-time via Groq’s blazing-fast LLaMA-4
 
 ---
 
-## 🚀 Features
-✅ Upload `.txt` or `.pdf` files  
-✅ Smart document chunking & embedding into Pinecone  
-✅ Ask questions and get direct, short answers  
-✅ Shows top matching source snippets for transparency  
-✅ Supports summaries & context questions automatically
+## ⚡ Features
+- 📂 **`index_app.py`** — Upload TXT/PDF, chunk, embed and index into Pinecone under a chosen namespace
+- 💬 **`chat_app.py`** — Select namespace & chat with your indexed documents
+- 🔍 Auto dropdown of existing namespaces from Pinecone — no manual typing
+- 🔥 Hybrid secret loading (local via `.env`, Streamlit Cloud via `st.secrets`)
 
 ---
 
-## ⚙️ Quickstart
+## 🚀 Local quickstart
 
-### Clone this repo
+### 1️⃣ Clone the repo
 ```bash
 git clone https://github.com/print-dc/my_rag_project.git
 cd my_rag_project
